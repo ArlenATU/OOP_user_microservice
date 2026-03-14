@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <div class="profile-mini">
+            <img src="https://i.pravatar.cc/100">
+            <h3 id="username">User</h3>
+            <span>View profile</span>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Messages</a>
+            <a href="#">Bookings</a>
+            <a href="#">Achievements</a>
+            <a href="#">Connections</a>
+            <a href="#">Group Sessions</a>
+            <a href="#">More</a>
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <h1>Settings</h1>
+
+        <div class="tabs">
+            <span class="active">Profile</span>
+            <span>Personal Info</span>
+            <span>Login & Security</span>
+        </div>
+
+        <div class="settings">
+
+            <div class="setting">
+                <div>
+                    <label>Name</label>
+                    <p id="nameText"></p>
+                </div>
+                <button onclick="editField('name')">Edit</button>
+            </div>
+
+            <div class="setting">
+                <div>
+                    <label>Avatar</label>
+                    <img id="avatarPreview" class="avatar">
+                </div>
+                <button onclick="editField('avatarUrl')">Edit</button>
+            </div>
+
+            <div class="setting">
+                <div>
+                    <label>Bio</label>
+                    <p id="bioText"></p>
+                </div>
+                <button onclick="editField('bio')">Edit</button>
+            </div>
+
+        </div>
+
+        <button class="saveBtn" onclick="saveProfile()">Save Changes</button>
+
+    </main>
+
+</div>
+
+<script src="profile.js"></script>
+
+</body>
+</html>
